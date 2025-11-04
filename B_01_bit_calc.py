@@ -84,17 +84,18 @@ def image_calc():
     return answer
 
 def integer_calc():
-    # get the image dimensions
-    width = int_check("Width: ", 0)
-    height = int_check("Height: ", 0)
+    # Ask the user to enter an integer (more than / equal to 0)
+    integer = int_check("Integer: ", 0)
 
-    # calculate the number of pixels and multiply by 24 to get to the number of bits
-    num_pixels = width * height
-    num_bits = num_pixels * 24
+    # calculate the integer to binary and work out the number of bits needed
+    raw_binary = bin(integer)
+
+    # remove the leading '0b' from the raw binary conversion
+    binary = raw_binary[2: ]
+    num_bits = len(binary)
 
     # Set up answer and return it
-    answer = (f"Number of pixels: {width} x {height} = {num_pixels} "
-             f"\nNumber of bits: {num_pixels} x 24 = {num_bits}")
+    answer = f"{integer} in binary is {binary}. We need {num_bits} to represent it."
 
     return answer
 
