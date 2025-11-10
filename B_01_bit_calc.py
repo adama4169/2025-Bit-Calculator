@@ -8,11 +8,17 @@ def instructions() :
     statement_generator("instructions", "-")
 
     print('''
-    Instructions go here.
-- instruction 1
-- instruction 2
-- etc
-    ''')
+- Select a file type (integer, image, text)
+
+- If you select integer, enter your digit and allow the program to calculate what this number is in binary.
+It will also calculate how many more digits are needed to represent the number.
+
+- If you select image, enter the width and height of your picture.
+The program will calculate the number of pixels and bits of your image.
+
+- If you select text, enter some letters, words, or sentences. 
+The program will calculate the amount of characters and then the amount of bits needed to represent it.
+   ''')
 
 
 
