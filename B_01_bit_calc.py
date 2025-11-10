@@ -18,9 +18,9 @@ The program will calculate the number of pixels and bits of your image.
 
 - If you select text, enter some letters, words, or sentences. 
 The program will calculate the amount of characters and then the amount of bits needed to represent it.
-   ''')
-
-
+   
+- When finished with the program, please enter 'xxx' to quit.
+    ''')
 
 # asks users for file type (integer / image / text / xxx)
 def get_filetype() :
